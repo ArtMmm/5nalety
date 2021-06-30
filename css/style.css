@@ -2064,7 +2064,8 @@
     bottom: -100px;
   }
   .spotify__package-description {
-    right: -120px;
+    opacity: 1;
+    right: -60px;
   }
   .spotify__package img {
     width: 140%;
