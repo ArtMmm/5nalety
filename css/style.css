@@ -147,6 +147,10 @@
   top: -200px;
   left: calc(50% - 636px);
 }
+.header__offer-figure2 {
+  width: 100% ;
+  display: none;
+}
 
 .header__offer-soon, .header__offer-discovery {
   z-index: 4;
@@ -1617,8 +1621,9 @@
   .header__row-logo {
     padding-top: 50px;
     position: relative;
-    left: 100px;
+    left: 60px;
   }
+
   .header__offer-soon {
     padding-top: 40px;
   }
@@ -1872,11 +1877,22 @@
   }
 }
 @media ( max-width: 480px) {
-  .header__offer-figure {
-    width: 150%;
+  .spotify__package {
+    width: 65%;
+    right: -40px;
   }
+  .header__offer-figure {
+    display: none;
+  }
+  .header__offer-figure2 {
+    width: 110%;
+    display: block;
+    position: absolute;
+    top: 190px;
+    left: -16px;
+}
   .header__offer-discovery{
-    right: 100px;
+    right: 140px;
     position: relative;
   }
   .five__box {
