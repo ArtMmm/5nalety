@@ -1,0 +1,25 @@
+<svg width="1926" height="5937" viewBox="0 0 1926 5937" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1926" height="5937">
+<rect width="1926" height="5937" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<rect width="1926" height="5915" fill="white"/>
+<path d="M1928.5 5913.5L-1.49963 5913.5L-1.49975 4403L1928.5 2421L1928.5 5913.5Z" fill="#AADA91"/>
+<rect x="1355.91" y="646" width="110.828" height="3709.35" transform="rotate(45 1355.91 646)" fill="#E8E8E8" fill-opacity="0.5"/>
+<rect x="1593.4" y="718.378" width="110.828" height="3709.35" transform="rotate(45 1593.4 718.378)" fill="#E8E8E8" fill-opacity="0.5"/>
+<rect x="1711.91" y="874.442" width="110.828" height="3709.35" transform="rotate(45 1711.91 874.442)" fill="#E8E8E8" fill-opacity="0.5"/>
+<rect x="1965.91" y="874.442" width="110.828" height="3709.35" transform="rotate(45 1965.91 874.442)" fill="#E8E8E8" fill-opacity="0.5"/>
+<rect x="2378.54" y="774.923" width="110.828" height="3709.35" transform="rotate(45 2378.54 774.923)" fill="#E8E8E8" fill-opacity="0.5"/>
+<rect x="2484.85" y="967.176" width="110.828" height="3709.35" transform="rotate(45 2484.85 967.176)" fill="#E8E8E8" fill-opacity="0.5"/>
+<rect x="2509.73" y="1247.64" width="110.828" height="3709.35" transform="rotate(45 2509.73 1247.64)" fill="#E8E8E8" fill-opacity="0.5"/>
+<rect x="2493.9" y="1566.55" width="110.828" height="3709.35" transform="rotate(45 2493.9 1566.55)" fill="#E8E8E8" fill-opacity="0.5"/>
+<path d="M0 0H1923L1926 1258H42.9046C20.8504 1258 2.95726 1240.15 2.90467 1218.1L0 0Z" fill="#AADA91"/>
+<path d="M0 0L1636 196.5L3 1841L0 0Z" fill="#096D47"/>
+<path d="M2 0H1925V232L2 0Z" fill="#202020"/>
+<rect x="2099.04" y="700.188" width="116.443" height="3897.26" transform="rotate(45 2099.04 700.188)" fill="#E8E8E8" fill-opacity="0.05"/>
+<rect x="3007.5" y="3534" width="132.825" height="4445.57" transform="rotate(45 3007.5 3534)" fill="white" fill-opacity="0.2"/>
+<rect x="3099.66" y="3794.23" width="132.825" height="4445.57" transform="rotate(45 3099.66 3794.23)" fill="white" fill-opacity="0.2"/>
+<rect x="3099.66" y="4162.89" width="132.825" height="4445.57" transform="rotate(45 3099.66 4162.89)" fill="white" fill-opacity="0.2"/>
+<path d="M1926 5915H-0.5V5581.5L1926 5912.5V5915Z" fill="#202020"/>
+</g>
+</svg>
