@@ -1877,6 +1877,9 @@
   }
 }
 @media ( max-width: 480px) {
+  .five__box-left-green, .five__box-left-white {
+    max-width: 350px;
+}
   .spotify__package {
     width: 65%;
     right: -40px;
