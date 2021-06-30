@@ -153,7 +153,7 @@
   text-transform: uppercase;
   font-family: Avenir Next Cyr;
   font-style: italic;
-  font-size: 72px;
+  font-size: 95px;
   color: #202020;
   -webkit-text-stroke: 1px #fff;
 }
@@ -178,7 +178,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 2;
+  z-index: 7;
 }
 
 .five .wrapper {
@@ -291,6 +291,7 @@
 }
 
 .five__text-top {
+  text-transform: uppercase;
   font-family: Avenir Next Cyr;
   font-style: italic;
   font-weight: 750;
@@ -310,10 +311,8 @@
 }
 
 .app-spotify {
-  background: url(../img/line-bgr.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 4662px;
+  background: #fff;
+  min-height: 4500px;
   padding-top: 120px;
 }
 
@@ -322,10 +321,26 @@
   position: relative;
 }
 
+.application__bgr-line {
+  position: absolute;
+  z-index: 5;
+  top: -120px;
+  right: 0;
+}
+
+.application .line2 {
+  z-index: 2;
+}
+.spotify__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .application__line {
   width: 100%;
   position: absolute;
   top: 1110px;
+  height: 1900px;
   left: 0px;
   z-index: 2;
 }
@@ -367,7 +382,7 @@
 
 .application .app .line {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   top: 40px;
   left: 60px;
   -webkit-animation-delay: 1.5s;
@@ -377,7 +392,7 @@
 .application .app .phone {
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -390,7 +405,7 @@
   position: absolute;
   top: 260px;
   left: 380px;
-  z-index: 2;
+  z-index: 5;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
@@ -403,7 +418,7 @@
   position: absolute;
   top: 390px;
   left: 620px;
-  z-index: 2;
+  z-index: 5;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
@@ -416,7 +431,7 @@
   position: absolute;
   top: 590px;
   left: 840px;
-  z-index: 2;
+  z-index: 5;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
@@ -445,7 +460,7 @@
 }
 
 .application .mark {
-  z-index: 4;
+  z-index: 5;
   top: -260px;
   position: relative;
 }
@@ -486,8 +501,8 @@
 .application .info__box {
   max-width: 86%;
   height: 1162px;
-  background: url(../img/info-bg.png);
-  background-repeat: no-repeat;
+  padding-top: 60px;
+  background: #202020;
   position: relative;
   margin: 0px auto;
   z-index: 4;
@@ -496,6 +511,10 @@
   font-style: normal;
   font-weight: 550;
   font-size: 20px;
+}
+.application .info__box img {
+  position: relative;
+  z-index: 9;
 }
 
 .application .info__box-row {
@@ -508,6 +527,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 9;
 }
 
 .application .info__box .row-1 .text {
@@ -689,6 +710,7 @@
   position: relative;
   top: -140px;
   margin: auto;
+  z-index: 5;
 }
 
 .owl-carousel .owl-item {
@@ -896,6 +918,7 @@
 .map {
   position: relative;
   min-height: 590px;
+  padding-top: 80px;
   top: -1px;
   background: #202020;
 }
@@ -1039,6 +1062,18 @@
   .application .app {
     left: 380px;
   }
+  .application {
+    max-height: 2400px;
+  }
+  .application__line {
+    display: none;
+  }
+  .spotify__bottom {
+    bottom: -180px;
+  }
+  .spotify__package  {
+    top: 520px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -1049,14 +1084,17 @@
     position: relative;
     right: 30px;
   }
+  .header__offer-figure {
+    left: 0;
+  }
   .five {
     max-height: 898px;
   }
   .five__box {
-    padding-top: 60px;
+    padding-top: 120px;
   }
   .five__text {
-    bottom: -80px;
+    bottom: 0px;
   }
   .man {
     width: 100%;
@@ -1117,8 +1155,8 @@
 }
 
 @media (max-width: 1366px) {
-  .header .wrapper {
-    overflow: inherit;
+  .spotify__package {
+    top: 660px;
   }
   .spotify__title {
     padding-top: 0;
@@ -1131,6 +1169,12 @@
 @media (max-width: 1280px) {
   .header__offer-figure {
     width: 100%;
+  }
+  .five__box {
+    padding-top: 70px;
+  }
+  .five__text {
+    bottom: -70px;
   }
 }
 
@@ -1160,6 +1204,7 @@
     min-height: 898px;
     max-height: inherit;
   }
+  
   .five__box-left {
     width: 70%;
     margin: auto;
@@ -1168,9 +1213,7 @@
     width: 50%;
     margin: auto;
   }
-  .five__text {
-    bottom: -30px;
-  }
+  
   .five__text-top, .five__text-bottom {
     color: #AADA91;
   }
@@ -1215,7 +1258,192 @@
     display: none;
   }
 }
-
+@media (max-width: 1080px) {
+  .header__offer-figure {
+    top: -100px;
+  }
+  .header__row-text {
+    width: 70%;
+  }
+  .spotify .app .line {
+    display: none;
+  }
+  .spotify .app__item {
+    position: static;
+  }
+  .spotify .app__box {
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .spotify__bumper {
+    width: 100%;
+    position: static;
+  }
+  .app-spotify {
+    min-height: 4220px;
+  }
+  .application .app__box {
+    justify-content: space-between;
+    
+  }
+  .application .app .download {
+    position: relative;
+    top: -100px;
+  }
+  .application .app .download__appstore, .application .app .download__googleplay {
+    width: 144px;
+  }
+  .spotify__bottom {
+    bottom: 0px;
+  }
+  .spotify__package {
+    top: 0px;
+    width: 90%;
+  }
+  .spotify__package img{
+  width: 100%;
+  } 
+  .application .mark {
+    top: -80px; 
+  }
+  .mark img {
+    width: 80%;
+    margin: auto;
+  }
+  .owl-carousel {
+    top: -60px;
+  }
+}
+@media (max-width: 1024px){
+  .header__offer-figure {
+    top: 100px;
+  }
+  .header__offer {
+    top: 0;
+    width: 90%;
+  }
+  .header__row-text {
+    width: 60%;
+    top: 120px;
+  }
+  .header__offer-soon, .header__offer-discovery {
+    font-size: 72px;
+  }
+  .wrapper {
+    max-width: 700px
+  }
+  .application {
+    max-height: 2580px;
+}
+  .five__box-left {
+    width: 90%;
+  }
+  .five__box-right {
+    width: 70%;
+  }
+  .five__text-bottom {
+    font-size: 114px;
+  }
+  .application .app {
+    height: 820px;
+    max-height: 780px;
+  }
+  .application .app__box{
+    flex-wrap: wrap ;
+  }
+  .application .app .phone, .application .app .barcode, .application .app .pay, .application .app .take {
+    width: 260px;
+    margin: 40px;
+  }
+  .application .app .download {
+    top: -210px;
+  }
+  .mark img {
+    width: 100%;
+  }
+  .application .info__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .application .info__box-row img {
+    display: none;
+  }
+  .application .info__box .row-1 {
+    position: static;
+  }
+  .application .info__box .row-1 .text {
+    text-align: center;
+    position: static;
+    margin: 5px auto;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .application .info__box .row-2 {
+    position: static;
+  }
+  .application .info__box .row-2 .text {
+    text-align: center;
+    position: static;
+    margin: 5px auto;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .application .info__box .row-3 {
+    position: static;
+  }
+  .application .info__box .row-3 .text {
+    text-align: center;
+    position: static;
+    margin: 5px auto;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .application .info__box .row-4 {
+    position: static;
+    margin-top: 0;
+  }
+  .application .info__box .row-4 .text {
+    text-align: center;
+    position: static;
+    margin: 5px auto;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .application .info__box .row-4 .text pre {
+    height: 44px;
+  }
+  .application .info__box .row-5 {
+    position: static;
+  }
+  .application .info__box .row-5 .text {
+    text-align: center;
+    position: static;
+    margin: 5px auto;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .application .info__box .row-5 .text p {
+    height: 64px;
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  .application .info__text {
+    font-size: 26px;
+    line-height: 44px;
+    margin-left: 15px;
+    text-align: left;
+  }
+  .spotify__package {
+    right: 0;
+    width: 75%;
+  }
+  .spotify__package img {
+    width: 140%;
+  }
+}
 @media (max-width: 990px) {
   .map__package {
     left: calc(50% - 213px);
@@ -1282,6 +1510,9 @@
   .spotify__bumper {
     display: none;
   }
+  .spotify__bottom {
+    bottom: -280px;
+  }
   .spotify .app__box {
     z-index: 9;
     color: #fff;
@@ -1294,9 +1525,9 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+            align-items: flex-start;
   }
   .spotify .app .line {
     display: none;
@@ -1354,6 +1585,23 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .spotify__package img {
+    width: 140%;
+  }
+  .app-spotify {
+    padding-top: 0;
+  }
+  .application .app .download {
+    top: -80px;
+  }
+  .application .app__box {
+    height: 600px;
+    justify-content: space-around;
+  }
+  .spotify__bottom {
+    bottom: -2px;
+    height: 3000px;
+}
 }
 
 @media (max-width: 700px) {
@@ -1365,6 +1613,73 @@
     left: 66px;
   }
 }
+@media (max-width: 660px) {
+  .header__row-logo {
+    padding-top: 50px;
+    position: relative;
+    left: 100px;
+  }
+  .header__offer-soon {
+    padding-top: 40px;
+  }
+  .header__row-text {
+  display: none;
+  }
+  .header__offer {
+    margin: auto;
+  }
+  .header__offer-figure {
+    top: 100px;
+    left: -10px;
+    width: 120%;
+}
+  .header__offer-soon, .header__offer-discovery {
+    font-size: 50px; 
+  }
+  .application .mark {
+    width: 70%;
+    margin: auto;
+    top: 80px;
+    left: -30px;
+  }
+  .application .info {
+    padding-top: 130px; 
+  }
+  .owl-carousel {
+    top: -40px;
+    height: 180px;
+  }
+  .spotify {
+    padding-top: 150px;
+  }
+  .application .app .download {
+    top: 100px;
+  }
+  .five__text-top {
+    font-size: 44px;
+  }
+  .five__text-bottom {
+    font-size: 74px;
+  }
+  .five__box-left {
+    padding-top: 0;
+  }
+  .five__box-left-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .five__box-left-top .cashbox {
+    width: 40%;
+    margin: auto;
+  }
+  .five__box-left-white, .five__box-left-green {
+    left: 0;
+    top: 0;
+    position: static;
+    margin: 20px auto;
+    transform: rotate(0deg);
+  }
+} 
 
 @media (max-width: 526px) {
   .header .red {
@@ -1554,5 +1869,86 @@
   }
   .map__footer-appstore, .map__footer-googleplay {
     margin: 15px;
+  }
+}
+@media ( max-width: 480px) {
+  .header__offer-figure {
+    width: 150%;
+  }
+  .header__offer-discovery{
+    right: 100px;
+    position: relative;
+  }
+  .five__box {
+    padding-top: 0px;
+}
+  .five__text {
+    bottom: 0px;
+  }
+  .spotify__bottom {
+    bottom: -20px;
+  }
+  .spotify__link-box {
+    width: 70%;
+  }
+  .spotify__link-box img {
+    width: 310px;
+  }
+  .spotify__bottom {
+    bottom: -90px;
+  }
+  .application .info__box .row-1 .text p, .application .info__box .row-2 .text p, .application .info__box .row-3 .text p, .application .info__box .row-4 .text p, .application .info__box .row-5 .text p {
+    font-size: 21px;
+    max-width: 80%;
+  }
+  .five__box-text {
+    width: 310px;
+    font-size: 16px;
+  }
+  .owl-carousel {
+    width: 90%;
+  }
+  .application .info__text {
+    min-width: 340px;
+    max-width: 360px;
+    font-size: 18px;
+  }
+  .application .app__box {
+    height: 700px;
+  }
+  .application .app .phone, .application .app .barcode, .application .app .pay, .application .app .take {
+    display: block;
+    margin: 10px auto;
+  }
+  .application .app .download {
+    top: 20px;
+  }
+  .spotify__bottom {
+    bottom: -100px;
+  }
+  .spotify__package-description {
+    right: -120px;
+  }
+  .spotify__package img {
+    width: 140%;
+  }
+  .application .info__box .row-1 .text p, .application .info__box .row-2 .text p, .application .info__box .row-3 .text p, .application .info__box .row-4 .text p, .application .info__box .row-5 .text p {
+    font-size: 18px;
+  }
+  .spotify__bottom {
+    bottom: -130px;
+  }
+  .five__box-left-green, .five__box-left-white {
+    max-width: 360px;
+  }
+  .five__text-bottom {
+    font-size: 64px;
+  }
+  .five {
+    background: #096d47;
+    max-height: 1270px;
+  }
+  .app-spotify {
+    min-height: 4060px;
   }
 }
