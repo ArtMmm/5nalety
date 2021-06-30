@@ -699,7 +699,7 @@
   opacity: 1;
 }
 
-.owl-carousel .owl-nav {
+.owl-carousel .owl-nav, .owl-carousel .owl-dots{
   display: none;
 }
 
