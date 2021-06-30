@@ -1894,8 +1894,11 @@
     width: 110%;
     display: block;
     position: absolute;
-    top: 190px;
+    top: 150px;
     left: -16px;
+}
+.five__text-bottom {
+  line-height: 90px;
 }
   .header__offer-discovery{
     right: 140px;
