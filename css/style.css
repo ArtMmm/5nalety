@@ -1876,6 +1876,104 @@
     margin: 15px;
   }
 }
+@media ( max-width: 590px) {
+  .application .app .download {
+    display: none;
+  }
+  .five__box-left-green, .five__box-left-white {
+    max-width: 350px;
+}
+  .spotify__package {
+    width: 65%;
+    right: -40px;
+  }
+  .header__offer-figure {
+    display: none;
+  }
+  .header__offer-figure2 {
+    width: 110%;
+    display: block;
+    position: absolute;
+    top: 190px;
+    left: -16px;
+}
+  .header__offer-discovery{
+    right: 140px;
+    position: relative;
+  }
+  .five__box {
+    padding-top: 0px;
+}
+  .five__text {
+    bottom: 0px;
+  }
+  .spotify__bottom {
+    bottom: -20px;
+  }
+  .spotify__link-box {
+    width: 70%;
+  }
+  .spotify__link-box img {
+    width: 310px;
+  }
+  .spotify__bottom {
+    bottom: -90px;
+  }
+  .application .info__box .row-1 .text p, .application .info__box .row-2 .text p, .application .info__box .row-3 .text p, .application .info__box .row-4 .text p, .application .info__box .row-5 .text p {
+    font-size: 21px;
+    max-width: 80%;
+  }
+  .five__box-text {
+    width: 310px;
+    font-size: 16px;
+  }
+  .owl-carousel {
+    width: 90%;
+  }
+  .application .info__text {
+    min-width: 340px;
+    max-width: 360px;
+    font-size: 18px;
+  }
+  .application .app__box {
+    height: 700px;
+  }
+  .application .app .phone, .application .app .barcode, .application .app .pay, .application .app .take {
+    display: block;
+    margin: 10px auto;
+  }
+  .application .app .download {
+    top: 20px;
+  }
+  .spotify__bottom {
+    bottom: -100px;
+  }
+  .spotify__package-description {
+    right: -120px;
+  }
+  .spotify__package img {
+    width: 140%;
+  }
+  .application .info__box .row-1 .text p, .application .info__box .row-2 .text p, .application .info__box .row-3 .text p, .application .info__box .row-4 .text p, .application .info__box .row-5 .text p {
+    font-size: 18px;
+  }
+  .spotify__bottom {
+    bottom: -130px;
+  }
+  .five__box-left-green, .five__box-left-white {
+    max-width: 360px;
+  }
+  .five__text-bottom {
+    font-size: 64px;
+  }
+  .five {
+    background: #096d47;
+    max-height: 1270px;
+  }
+  .app-spotify {
+    min-height: 4060px;
+  }
+}
 @media ( max-width: 480px) {
   .five__box-left-green, .five__box-left-white {
     max-width: 350px;
