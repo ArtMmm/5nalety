@@ -1878,7 +1878,11 @@
 }
 @media ( max-width: 590px) {
   .application .app .download {
-    display: none;
+    top: 300px;
+    left: -470px;
+    display: flex;
+    justify-content: space-around;
+    width: 410px;
   }
   .five__box-left-green, .five__box-left-white {
     max-width: 350px;
@@ -1945,8 +1949,8 @@
     display: block;
     margin: 10px auto;
   }
-  .application .app .download {
-    top: 20px;
+  .five__box-text {
+    padding-top: 20px;
   }
   .spotify__bottom {
     bottom: -100px;
@@ -1978,6 +1982,15 @@
   }
 }
 @media ( max-width: 480px) {
+  .application .mark img {
+    width: 130%;
+  }
+  .application .mark {
+    left: -50px;
+}
+  .application .app .download {
+    display: block;
+  }
   .five__box-left-green, .five__box-left-white {
     max-width: 350px;
 }
@@ -2041,7 +2054,11 @@
     margin: 10px auto;
   }
   .application .app .download {
-    top: 20px;
+    top: 40px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 410px;
   }
   .spotify__bottom {
     bottom: -100px;
